@@ -1,7 +1,7 @@
 Package: adpss
 Title: Design and Analysis of Locally or Globally Efficient Adaptive
         Designs
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: person("Kosuke", "Kashiwabara", email = "kashiwabara-tky@umin.ac.jp", role = c("aut", "cre"))
 Description: Provides the functions for planning and conducting a
   clinical trial with adaptive sample size determination. Maximal statistical
@@ -22,8 +22,8 @@ RoxygenNote: 6.0.1
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
 NeedsCompilation: yes
-Packaged: 2018-07-11 07:40:56 UTC; Epistat
+Packaged: 2018-09-20 09:09:13 UTC; Epistat
 Author: Kosuke Kashiwabara [aut, cre]
 Maintainer: Kosuke Kashiwabara <kashiwabara-tky@umin.ac.jp>
 Repository: CRAN
-Date/Publication: 2018-07-18 13:00:07 UTC
+Date/Publication: 2018-09-20 17:10:22 UTC

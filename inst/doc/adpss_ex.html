@@ -12,7 +12,7 @@
 
 <meta name="author" content="Kosuke Kashiwabara" />
 
-<meta name="date" content="2018-07-11" />
+<meta name="date" content="2018-09-20" />
 
 <title>Design and Analysis of Clinical Trials with Fully Flexible Adaptive Sample Size Determination</title>
 
@@ -280,7 +280,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 
 <h1 class="title toc-ignore">Design and Analysis of Clinical Trials with Fully Flexible Adaptive Sample Size Determination</h1>
 <h4 class="author"><em>Kosuke Kashiwabara</em></h4>
-<h4 class="date"><em>2018-07-11</em></h4>
+<h4 class="date"><em>2018-09-20</em></h4>
 
 
 
@@ -317,7 +317,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <a class="sourceLine" id="cb3-7" data-line-number="7"><span class="co">#&gt; 2        1  5.67  8.562666  3.40  9.783935  0.06392209     FALSE</span></a>
 <a class="sourceLine" id="cb3-8" data-line-number="8"><span class="co">#&gt; 3        2  9.18  8.562085  4.35 10.539378  0.06951043     FALSE</span></a>
 <a class="sourceLine" id="cb3-9" data-line-number="9"><span class="co">#&gt; 4        3 14.71  8.551346  7.75 11.719755  0.18084726     FALSE</span></a>
-<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; 5        4 20.02  8.456860 11.11 12.768997  0.48935480     FALSE</span></a></code></pre></div>
+<a class="sourceLine" id="cb3-10" data-line-number="10"><span class="co">#&gt; 5        4 20.02  8.456860 11.11 12.768997  0.48935479     FALSE</span></a></code></pre></div>
 <p>At the forth (final) interim analysis, the null hypothesis is not rejected. Then, the maximum sample size (here, the maximum Fisher information level) is calculated. The alternative hypothesis for which an adequate level of power will be ensured can be determined arbitrarily referring to all available data including the interim results but not correlates of future data. Here, the maximum likelihood estimate <span class="math inline">\(11.11 / 20.02\)</span> at the forth interim analysis is chosen as the alternative hypothesis. The maximum information level to obtaine the marginal power of 0.75 can be calculated by the function <code>sample_size_norm_local</code>.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" data-line-number="1"><span class="co"># Sample size calculation</span></a>
 <a class="sourceLine" id="cb4-2" data-line-number="2"><span class="kw">sample_size_norm_local</span>(</a>
@@ -348,7 +348,7 @@ code > span.fu { color: #900; font-weight: bold; }  code > span.er { color: #a61
 <a class="sourceLine" id="cb6-7" data-line-number="7"><span class="co">#&gt; 2        1  5.67  8.562666  3.40  9.783935  0.06392209     FALSE</span></a>
 <a class="sourceLine" id="cb6-8" data-line-number="8"><span class="co">#&gt; 3        2  9.18  8.562085  4.35 10.539378  0.06951043     FALSE</span></a>
 <a class="sourceLine" id="cb6-9" data-line-number="9"><span class="co">#&gt; 4        3 14.71  8.551346  7.75 11.719755  0.18084726     FALSE</span></a>
-<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="co">#&gt; 5        4 20.02  8.456860 11.11 12.768997  0.48935480     FALSE</span></a>
+<a class="sourceLine" id="cb6-10" data-line-number="10"><span class="co">#&gt; 5        4 20.02  8.456860 11.11 12.768997  0.48935479     FALSE</span></a>
 <a class="sourceLine" id="cb6-11" data-line-number="11"><span class="co">#&gt; 6        5 24.44        NA 14.84 11.166106  1.00000000      TRUE</span></a></code></pre></div>
 <p>As indicated at the final row, the null hypothesis is rejected.</p>
 </div>
